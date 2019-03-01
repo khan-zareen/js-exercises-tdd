@@ -1,7 +1,12 @@
-test('print list of names prefixed with Hello', function () {
-    // Arrange
+const greetPeople = require("./greet-people");
+test("print list of names prefixed with Hello", function() {
+  // Arrange
+  const poeple = ["Irina", "Ashleigh", "Etza"];
+  const expection = "Hello Irina, Ashleigh, Etza";
 
-    // Act
+  // Act
+  const result = greetPeople(poeple);
 
-    // Assert
-})
+  // Assert
+  expect(result).toEqual(expection);
+});
