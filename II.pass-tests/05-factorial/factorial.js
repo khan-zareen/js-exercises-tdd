@@ -9,7 +9,12 @@
 // note: factorial of 0 is 1
 
 function factorial(int) {
-
+  fact = int;
+  if (int === 0 || int === 1) return 1;
+  while (int > 1) {
+    int--;
+    fact *= int;
+  }
+  return fact;
 }
-
 module.exports = factorial;
