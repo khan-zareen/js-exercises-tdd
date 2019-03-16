@@ -5,7 +5,7 @@ function greetPeople(people) {
     greeting = greeting + person + ", ";
   });
 
-  //return greeting.slice(0, -2);
+  return greeting.slice(0, -2);
 }
 
 module.exports = greetPeople;
